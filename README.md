@@ -1,14 +1,17 @@
 ## JinjaPwn
 
-`JinjaPwn` is a simple web-based offensive security tool used to generate, test, and validate malicious Jinja expressions for exploitation and red-team operations.
+`JinjaPwn` is a simple open-source web-based offensive security tool used to generate, test, and validate malicious Jinja expressions for exploitation and offensive operations.
 
+It is designed for security engineers and researchers who need quick access to payload generation during assessments and want to go beyound the trivial `{7*7}` expression to validate and exploit SSTI.
 
-It is designed for security engineers and researchers who need quick access to payload generation during assessments and want to go beyound the trivial `{7*7}` SSTI validation via Jinja expressions.
+Server Side Template Injection (SSTI) vulnerabilities in Jinja2 provide attackers with a direct path to code execution, making them one of the most impactful exploitation vectors in offensive operations. 
+
+`JinjaPwn` turns SSTI and Jinja expressions into offensive payloads by implementing ready to use payloads that allows you to perform system command execution on compromised hosts, deploying C2 beacons or stagers through droppers, and exploiting cloud environments by extracting AWS credentials from the compromised application and more.
 
 
 ## Features
 
-- Web-based interface to craft Jinja expressions.
+- Web-based interface to craft malicious Jinja expressions.
 - Built-in payload templates for common attack scenarios such as:
   - Outbound connection tests
   - Command execution
@@ -18,7 +21,7 @@ It is designed for security engineers and researchers who need quick access to p
 - CLI mode for quick local usage.
 
 
-### Local Setup
+## Local Setup
 
 1. Clone the repository:
    ```bash
@@ -41,9 +44,8 @@ It is designed for security engineers and researchers who need quick access to p
    http://127.0.0.1:5000
    ```
 
----
 
-### Docker Setup
+## Docker Setup
 
 1. Build the Docker image:
    ```bash
@@ -60,4 +62,6 @@ It is designed for security engineers and researchers who need quick access to p
    http://127.0.0.1:5000
    ```
 
----
+## Screenshots
+
+![Fetch and Execute Binary Jina](screenshots/sliver-fetch-execute-jinja.png)
