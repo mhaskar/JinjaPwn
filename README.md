@@ -64,4 +64,7 @@ Server Side Template Injection (SSTI) vulnerabilities in Jinja2 provide attacker
 
 ## Screenshots
 
+
+![Boto3 get caller identity](screenshots/boto3-get-caller-identity-jinja2.png)
+
 ![Fetch and Execute Binary Jina](screenshots/sliver-fetch-execute-jinja.png)
