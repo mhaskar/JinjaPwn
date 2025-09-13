@@ -1,4 +1,4 @@
-## JinjaPwn
+## JinjaPwn ![](https://img.shields.io/badge/python-3-yellow)
 
 `JinjaPwn` is a simple open-source web-based offensive security tool used to generate, test, and validate malicious Jinja expressions for exploitation and offensive operations.
 
